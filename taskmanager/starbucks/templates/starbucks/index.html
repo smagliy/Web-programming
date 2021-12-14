@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Starbucks</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'css/main.css'%}" type="text/css">
+     <link rel="stylesheet" href="{% static 'css/normalize.css'%}"  type="text/css">
+</head>
+<body>
+     <div class="header">
+          <div class="wrapper">
+               <div class="navigation">
+               <img src="{% static 'img/Logo.png' %}" alt="logo">
+               <ul class="nav">
+                    <li><a href="{% url 'home' %}">Кава</a></li>
+                    <li><a class="active" href="/">Про Starbucks</a></li>
+                    <li><a href="{% url 'registration' %}">Реєстрація</a></li>
+               </ul>
+               <img src="{% static 'img/bag.png' %}" alt="bag">
+          </div>
+          </div>
+     </div>
+     <div class="banner">
+          <div class="wrapper">
+               <div class="first">
+               <div class="rectengle1"></div>
+               <h1 class="title">Насолоджуйтеся кавою Starbucks® </h1>
+               <div class="rectengle2"></div>
+          </div>
+               <a class="bottom" href="">Оберіть свою каву</a>
+          </div>
+     </div>
+     <div class="page">
+          <div class="wrapper">
+               <img class="coffee" src="{% static 'img/coffee.png' %}" alt="coffee">
+               <h2 class="h2">Starbucks at Home</h2>
+               <p class="p1">Насолоджуйтеся кавою Starbucks тепер у Вас вдома</p>
+               <div class="box">
+                    <div class="box1">
+                         <img  class="coffeehouse" src="{% static 'img/coffeehouse.jpg' %}" alt="coffeehouse">
+                         <p class="p2">Насичений смак кави</p>
+                         <h3 class="namebox1">STARBUCKS MIDDLE ROAST</h3>
+                         <p class="bottom1">+</p>
+                    </div>
+                    <div class="box2">
+                         <img src="{% static 'img/coffeeveranda.jpg' %}" alt="coffeeveranda" class="coffeeveranda">
+                         <p class="p3">Ніжний смак з солодкими нотками</p>
+                         <h3 class="namebox2">STARBUCKS BLONDE ROAST</h3>
+                         <p class="bottom2">+</p>
+                    </div>
+               </div>
+               <div class="text">
+               <img class="foto1" src="{% static 'img/co.jpg' %}" alt="foto1">
+               <p class="coffeecup_p">Кожного дня, йдучи на роботу, ми сподіваємося, що нам вдасться зробити дві речі: поділитися чудовою кавою зі своїми друзями й допомогти зробити світ трішечки кращим.</p>
+          </div>
+          </div>
+     </div>
+     <div class="footer">
+          <div class="wrapper">
+               <div class="footer1">
+               <img src="{% static 'img/footer.png' %}" alt="logo">
+               <ul class="footerlist">
+                    <li><a href="/">Кава</a></li>
+                    <li><a href="/">Про Starbucks</a></li>
+                    <li><a href="{% url 'registration' %}">Реєстрація</a></li>
+               </ul>
+               <img src="{% static 'img/bag1.png' %}" alt="bag">
+          </div>
+          </div>
+     </div>
+</body>
+</html>
